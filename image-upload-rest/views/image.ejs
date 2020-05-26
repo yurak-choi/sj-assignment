@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Image Upload</title>
+
+</head>
+<body>
+
+<div>
+	<h1>Node.js - Image Upload</h1>
+	
+	<form id="imageForm" method="post">
+		<input type="hidden" id="name" name="name" >
+		<input type="hidden" id="content_base64" name="content_base64" >
+		<input type="hidden" id="size" name="size" >
+		
+		<input type="file" id="imgFile" name="imgFile" ><br>
+		<input type="submit" id="submitBtn" value="전송" >
+	</form>
+	
+	<div>
+		<p id="uploadsuccess" style="display:none">
+			<span id="img_id"></span>
+			가 업로드 되었습니다.
+			</p>
+		<p id="uploadError" style="display:none">
+			이미지 업로드를 실패하였습니다.<br>
+			<span id="error_msg"></span>
+		</p>
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="/javascript/image.js"></script>
+</body>
+
+</html>
